@@ -1,1 +1,27 @@
 // compileCompressed: ./style.css
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+}
