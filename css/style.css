@@ -15,8 +15,74 @@
 html {
   font-size: 10px;
   height: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif; }
 
 body {
-  margin: 0 auto;
-  display: flex; }
+  text-align: center; }
+
+.component {
+  margin: 5rem;
+  margin-top: 10rem;
+  border-radius: 2rem;
+  width: 60rem;
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.15);
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .component .outcome {
+    border-radius: 2rem;
+    padding: 3rem 4rem;
+    color: white;
+    background: linear-gradient(#7857ff, #2e2be9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem; }
+    .component .outcome__heading {
+      color: rgba(235, 241, 255, 0.8);
+      font-weight: 500;
+      font-size: 2rem; }
+    .component .outcome__circle {
+      padding: 4rem;
+      background-color: rgba(78, 33, 202, 0.5);
+      border-radius: 50%;
+      width: 18rem;
+      height: 18rem; }
+      .component .outcome__circle .score {
+        font-size: 7rem;
+        font-weight: 800; }
+      .component .outcome__circle .of {
+        color: rgba(235, 241, 255, 0.5);
+        font-size: 1.2rem;
+        font-weight: 500; }
+    .component .outcome__result {
+      font-size: 3rem;
+      font-weight: 500; }
+    .component .outcome__p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: rgba(235, 241, 255, 0.8); }
+  .component .summary {
+    padding: 3rem; }
+    .component .summary .heading-sum {
+      font-size: 2rem; }
+    .component .summary .back-color-red {
+      background-color: rgba(255, 87, 87, 0.1); }
+    .component .summary .stat {
+      display: flex;
+      justify-content: space-between; }
+      .component .summary .stat__icohead {
+        display: flex; }
+        .component .summary .stat__icohead .heading {
+          font-weight: 500;
+          font-size: 1.5rem; }
+      .component .summary .stat .color-red {
+        color: #ff5757; }
+      .component .summary .stat .color-yellow {
+        color: #ffb01f; }
+      .component .summary .stat .color-green {
+        color: #00bd91; }
+      .component .summary .stat .color-blue {
+        color: #1125d4; }
+      .component .summary .stat__points {
+        display: flex; }

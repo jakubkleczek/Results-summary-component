@@ -19,9 +19,129 @@ html {
     font-size: 10px;
     height: 100%;
     box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 body {
-    margin: 0 auto;
-    display: flex;
+    text-align: center;
+}
+
+.component {
+    margin: 5rem;
+    margin-top: 10rem;
+    border-radius: 2rem;
+    width: 60rem;
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.15);
+
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .outcome {
+        border-radius: 2rem;
+        padding: 3rem 4rem;
+        color: white;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2.5rem;
+
+        &__heading {
+            color: hsla(222, 100%, 96%, 0.8);
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        &__circle {
+            padding: 4rem;
+            background-color: rgba(78, 33, 202, 0.5);
+            border-radius: 50%;
+            width: 18rem;
+            height: 18rem;
+
+            .score {
+                font-size: 7rem;
+                font-weight: 800;
+            }
+
+            .of {
+                color: hsla(222, 100%, 96%, 0.5);
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+
+        &__result {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        &__p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: hsla(222, 100%, 96%, 0.8);
+        }
+    }
+
+    .summary {
+        padding: 3rem;
+
+        .heading-sum {
+            font-size: 2rem;
+        }
+
+        .back-red {
+            background-color: hsla(0, 100%, 67%, 0.1);
+        }
+        .back-yellow {
+            background-color: hsl(39, 100%, 56%, 0.1);
+        }
+        .back-green {
+            background-color: hsl(166, 100%, 37%, 0.1);
+        }
+        .back-blue {
+            background-color: hsl(234, 85%, 45%, 0.1);
+        }
+        .stat {
+            display: flex;
+            justify-content: space-between;
+
+            &__icohead {
+                display: flex;
+                .icon {
+                }
+
+                .heading {
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .color-red {
+                color: hsl(0, 100%, 67%);
+            }
+            .color-yellow {
+                color: hsl(39, 100%, 56%);
+            }
+            .color-green {
+                color: hsl(166, 100%, 37%);
+            }
+            .color-blue {
+                color: hsl(234, 85%, 45%);
+            }
+
+            &__points {
+                display: flex;
+            }
+
+            .thick {
+            }
+
+            .normal {
+            }
+        }
+        &__btn {
+        }
+    }
 }

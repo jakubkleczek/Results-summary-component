@@ -5,7 +5,6 @@
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
         <link
             rel="stylesheet"
             href="css/style.css" />
@@ -14,68 +13,85 @@
             type="image/png"
             sizes="32x32"
             href="./assets/images/favicon-32x32.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans:wght@600;700&display=swap"
+            rel="stylesheet" />
 
         <title>Frontend Mentor | Results summary component</title>
     </head>
     <body>
-        <section class="outcome">
-            <h2 class="outcome__heading">Your Result</h2>
-            <h1 class="outcome__score">76</h1>
-            <h3 class="outcome__of">of 100</h3>
-            <h2 class="outcome__result">Great</h2>
-            <p class="outcome__p">
-                You scored higher than 65% of the people who have taken these
-                tests.
-            </p>
-        </section>
-        <section class="summary">
-            <h2 class="heading-sum">Summary</h2>
-            <div class="stat">
-                <img
-                    src="img/icon-reaction.svg"
-                    alt="reaction"
-                    class="stat__reaction" />
-                <h3 class="stat__heading">Reaction</h3>
-                <div class="stat__points">
-                    <p class="thick">80</p>
-                    <p class="normal">/ 100</p>
+        <div class="component">
+            <section class="outcome">
+                <h2 class="outcome__heading">Your Result</h2>
+                <div class="outcome__circle">
+                    <h1 class="score">76</h1>
+                    <h3 class="of">of 100</h3>
                 </div>
-            </div>
-            <div class="stat">
-                <img
-                    src="img/icon-memory.svg"
-                    alt="memory"
-                    class="stat__memory" />
-                <h3 class="stat__heading">Memory</h3>
-                <div class="stat__points">
-                    <p class="thick">92</p>
-                    <p class="normal">/ 100</p>
+                <h2 class="outcome__result">Great</h2>
+                <p class="outcome__p">
+                    You scored higher than 65% of the people who have taken
+                    these tests.
+                </p>
+            </section>
+            <section class="summary">
+                <h2 class="heading-sum">Summary</h2>
+                <div class="stat back-red">
+                    <div class="stat__icohead">
+                        <img
+                            src="img/icon-reaction.svg"
+                            alt="reaction"
+                            class="icon" />
+                        <h3 class="heading color-red">Reaction</h3>
+                    </div>
+
+                    <div class="stat__points">
+                        <p class="thick">80</p>
+                        <p class="normal">/ 100</p>
+                    </div>
                 </div>
-            </div>
-            <div class="stat">
-                <img
-                    src="img/icon-verbal.svg"
-                    alt="verbal"
-                    class="stat__verbal" />
-                <h3 class="stat__heading">Verbal</h3>
-                <div class="stat__points">
-                    <p class="thick">61</p>
-                    <p class="normal">/ 100</p>
+                <div class="stat back-yellow">
+                    <div class="stat__icohead">
+                        <img
+                            src="img/icon-memory.svg"
+                            alt="memory"
+                            class="icon" />
+                        <h3 class="heading color-yellow">Memory</h3>
+                    </div>
+                    <div class="stat__points">
+                        <p class="thick">92</p>
+                        <p class="normal">/ 100</p>
+                    </div>
                 </div>
-            </div>
-            <div class="stat">
-                <img
-                    src="img/icon-visual.svg"
-                    alt="visual"
-                    class="stat__visual" />
-                <h3 class="stat__heading">Visual</h3>
-                <div class="stat__points">
-                    <p class="thick">72</p>
-                    <p class="normal">/ 100</p>
+                <div class="stat back-green">
+                    <div class="stat__icohead">
+                        <img
+                            src="img/icon-verbal.svg"
+                            alt="verbal"
+                            class="icon" />
+                        <h3 class="heading color-green">Verbal</h3>
+                    </div>
+
+                    <div class="stat__points">
+                        <p class="thick">61</p>
+                        <p class="normal">/ 100</p>
+                    </div>
                 </div>
-            </div>
-            <button class="summary__btn">Continue</button>
-        </section>
+                <div class="stat back-blue">
+                    <div class="stat__icohead">
+                        <img
+                            src="img/icon-visual.svg"
+                            alt="visual"
+                            class="icon" />
+                        <h3 class="heading color-blue">Visual</h3>
+                    </div>
+                    <div class="stat__points">
+                        <p class="thick">72</p>
+                        <p class="normal">/ 100</p>
+                    </div>
+                </div>
+                <button class="summary__btn">Continue</button>
+            </section>
+        </div>
 
         <div class="attribution">
             Challenge by
